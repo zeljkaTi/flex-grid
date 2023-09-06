@@ -25,8 +25,8 @@ nav {
 }
 
 .one_of_five:hover {
-    height: 20vh;
-    width: 20vh;
+    height: 15vh;
+    width: 15vh;
     border-radius: 0;
     opacity: 1;
 }
@@ -38,11 +38,6 @@ nav {
     color: #242323;
     font-size: 45px;
     padding-bottom: 20px;
-}
-
-.arrow {
-    height: 30px;
-    width: 40px;
 }
 
 .article_img {
@@ -64,6 +59,22 @@ nav {
 
 .main_4 {
     border: 10px solid #F5D2D3;
+}
+
+.main_5 {
+    border: 10px solid #7658c8;
+}
+
+.main_6 {
+    border: 10px solid #2abb73;
+}
+
+.main_7 {
+    border: 10px solid #98288e;
+}
+
+.main_8 {
+    border: 10px solid #edb235;
 }
 
 .title1_4 {
@@ -238,3 +249,88 @@ footer {
     font-family: sans-serif;
     color: #585858;
 }
+
+/* Flex and Grid part */
+
+body {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 15vh auto;
+}
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#middle_part {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#main_title {
+    grid-column: span 6;
+    display: grid;
+    place-items: center;
+}
+
+.main_article_l, .paragraphs_l {
+    grid-column: 1 /span 3;
+}
+
+.main_article_r, .paragraphs_r {
+    grid-column: 4 / span 3;
+}
+
+.main_article_l, .main_article_r {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.title1_4 {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.art_foot {
+    display:flex;
+    flex-direction: row;
+}
+
+.paragraphs_l, .paragraphs_r {
+    display: flex;
+    flex-direction: row;
+}
+
+.see_me {
+    grid-column: span 6;
+    display: grid;
+    place-items: center;
+}
+
+.near_the_end1 {
+    grid-column: 1 / span 1;
+}
+ .near_the_end2 {
+    grid-column: 2 / span 1;
+ }
+
+ .near_the_end3 {
+    grid-column: 3 / span 1;
+ }
+ .near_the_end4 {
+    grid-column: 4 / span 1;
+ }
+
+ .near_the_end5 {
+    grid-column: 6 / span 1;
+ }
