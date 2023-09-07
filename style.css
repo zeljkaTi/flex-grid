@@ -115,6 +115,7 @@ nav {
     margin: 20px 50px;
     font-size: 20px;
     color: #242323;
+    height: 55%;
 }
 
 .art_foot {
@@ -258,7 +259,7 @@ body {
 
 #container {
     display: grid;
-    grid-template-rows: 15vh auto;
+    grid-template-rows: 15vh auto 20%;
 }
 
 nav { 
@@ -299,6 +300,8 @@ nav {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
+    height: 40%;
+    margin-top: 10px;
 }
 
 .art_foot {
